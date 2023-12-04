@@ -30,11 +30,3 @@ jobs:
       run: |
         npm install -g pm2
         pm2 start index.js
-
-    # Add more steps as needed, such as running tests or deploying
-
-    - name: Stop pm2
-      run: pm2 stop index
-
-    - name: Cleanup
-      run: pm2 delete index
