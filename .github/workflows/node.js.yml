@@ -12,7 +12,7 @@ jobs:
     
     strategy:
       matrix:
-        node-version: [23.x]
+        node-version: [14.x]
 
     steps:
       - name: Checkout Repository
@@ -26,6 +26,10 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-    - name: Start index.js with pm2
-      run: |
-        npm start index.js
+      - name: Skip actions and go to run
+        if: false
+        run: echo "This won't be executed"
+
+      - name: Start index.js with pm2
+        run: |
+          npm start index.js
