@@ -4,7 +4,8 @@
   "description": "An awesome Discord.js bot",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+     "test": "echo 'No tests specified'"
   },
   "author": "Your Name",
   "license": "MIT",
