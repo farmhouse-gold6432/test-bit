@@ -442,7 +442,7 @@ commandBuild.create(
                     const meetingRoom = await guild.channels.create(
                         {
                             name: 'private-meeting-room',
-                            type: ChannelType.GuildVoice,
+                            type: 2,
                             parent: category.id,
                             permissionOverwrites
                         }
