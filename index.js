@@ -4,7 +4,7 @@ const prefix = 'DF.';
 
 const client = new Client({
   intents: [
-    GatewayIntentBits.Guilds
+    'Guilds'
   ],
 });
 
