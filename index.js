@@ -9,16 +9,17 @@ const guildId = '1176493157165310003';
 const client = new Client(
     {
         intents: [
-            GatewayIntentBits.GuildMessages,
-            GatewayIntentBits.MessageContent,
-            GatewayIntentBits.GuildModeration,
-            GatewayIntentBits.GuildInvites,
-            GatewayIntentBits.DirectMessages,
-            GatewayIntentBits.GuildEmojisAndStickers,
-            GatewayIntentBits.GuildMembers,
-            GatewayIntentBits.GuildVoiceStates,
-            GatewayIntentBits.DirectMessageReactions,
-            GatewayIntentBits.DirectMessageTyping,
+            1,
+            512,
+            32768,
+            4,
+            64,
+            4096,
+            8,
+            2,
+            128,
+            8192,
+            16384,
         ], partials: [Partials.Channel]
     }
 );
