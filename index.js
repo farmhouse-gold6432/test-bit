@@ -1,4 +1,3 @@
-console.info('Hi, I am a console. I am cool!')
 const { Client, GatewayIntentBits, Intents } = require('discord.js');
 const token = 'MTE3NjQ5MzY2MDEwNDI5ODUxNg.GpvlCa.GlK8QEmnB_DJcd8nFSJFWx6UNF-FVFXSaQrmMI';
 const prefix = 'DF.';
