@@ -1,1 +1,1 @@
-console.info('Hi, I am a console.')
+console.info('Hi, I am a console. I am cool!')
