@@ -168,7 +168,7 @@ client.on("messageDelete", (message) => {
 
 client.on('messageCreate', (message) => {
     const content = message.content;
-    if (!content.startsWith('blockstate.' || message.author.bot) || message.channel.type === ChannelType.DM) return;
+    if (!content.startsWith('blockstate.' || message.author.bot) || message.channel.type === 'DM') return;
     const args = content.slice(11).split(/\s+/g);
     const cmd = args.shift();
     const command = commandBuild.commands.find((cmdName) => cmdName.name === cmd);
@@ -178,7 +178,7 @@ client.on('messageCreate', (message) => {
 });
 
 client.on('messageCreate', async (message) => {
-    if (message.author.bot || message.channel.type === ChannelType.DM) return;
+    if (message.author.bot || message.channel.type === 'DM') return;
     if (message.author.id === '424820587551129600' && message.guild === null) {
         let guild = client.guilds.cache.get('1125667083544436758');
         let channel = guild.channels.cache.get('1125667085041811508'); // '1125667085041811508' = general channel
