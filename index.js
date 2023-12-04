@@ -9,7 +9,6 @@ const guildId = '1176493157165310003';
 const client = new Client(
     {
         intents: [
-            GatewayIntentBits.Guilds,
             GatewayIntentBits.GuildMessages,
             GatewayIntentBits.MessageContent,
             GatewayIntentBits.GuildModeration,
