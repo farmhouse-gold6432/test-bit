@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [14.x, 16.x]
 
     steps:
     - name: Checkout Repository
@@ -26,5 +26,5 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    - name: Run index.js
-      run: node index.js
+    - name: Run Tests
+      run: npm test
