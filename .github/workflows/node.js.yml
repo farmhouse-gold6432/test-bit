@@ -26,6 +26,6 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    - name: Start index.js with pm2
+    - name: Start index.js
       run: |
         npm start index.js
