@@ -12,7 +12,7 @@ jobs:
     
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [17.x]
 
     steps:
     - name: Checkout Repository
@@ -28,5 +28,4 @@ jobs:
 
     - name: Start index.js with pm2
       run: |
-        npm install -g pm2
-        pm2 start index.js
+        npm start index.js
