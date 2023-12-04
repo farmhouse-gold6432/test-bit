@@ -1,7 +1,7 @@
 {
-  "name": "your-bot-name",
+  "name": "awesome-discord-bot",
   "version": "1.0.0",
-  "description": "A simple Discord.js bot",
+  "description": "An awesome Discord.js bot",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
