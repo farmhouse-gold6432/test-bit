@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits, PermissionsBitField, EmbedBuilder, AttachmentBuilder, ChannelType, Partials } = require('discord.js');
+const { Client, PermissionsBitField, EmbedBuilder, AttachmentBuilder, ChannelType, Partials } = require('discord.js');
 
 const https = require('https');
 const fs = require('fs');
@@ -20,7 +20,7 @@ const client = new Client(
             128,
             8192,
             16384,
-        ], partials: [Partials.Channel]
+        ]
     }
 );
 
