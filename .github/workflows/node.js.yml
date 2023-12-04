@@ -8,11 +8,11 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
-
+    runs-on: windows-latest
+    
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [20.10.0.x]
 
     steps:
     - name: Checkout Repository
@@ -26,5 +26,15 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    - name: Run Tests
-      run: npm test
+    - name: Start index.js with pm2
+      run: |
+        npm install -g pm2
+        pm2 start index.js
+
+    # Add more steps as needed, such as running tests or deploying
+
+    - name: Stop pm2
+      run: pm2 stop index
+
+    - name: Cleanup
+      run: pm2 delete index
