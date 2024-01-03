@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits } = require('discord.js');
+const { Client, GatewayIntentBits, Events } = require('discord.js');
 const { token } = require('./config.json');
 
 const client = new Client(
@@ -9,5 +9,9 @@ const client = new Client(
         ]
     }
 );
+
+client.once(Events.ClientReady, () => {
+    console.info(`Bot is ready!`)
+})
 
 client.login(token); // A comment.

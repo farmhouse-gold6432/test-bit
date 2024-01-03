@@ -1,0 +1,23 @@
+{
+  "name": "test-bit",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farmhouse-gold6432/test-bit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farmhouse-gold6432/test-bit/issues"
+  },
+  "homepage": "https://github.com/farmhouse-gold6432/test-bit#readme"
+}

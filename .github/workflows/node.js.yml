@@ -16,10 +16,10 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4.1.1
 
       - name: Set Up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4.0.1
         with:
           node-version: ${{ matrix.node-version }}
 
@@ -34,4 +34,4 @@ jobs:
       - name: Check if the previous step failed
         if: steps.start-app.outcome != 'success'
         run: |
-          echo "The previous step failed. You can add your retry logic here or take specific actions."
+          npm start index.js
