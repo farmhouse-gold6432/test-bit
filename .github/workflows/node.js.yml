@@ -12,7 +12,7 @@ jobs:
     
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x]
 
     steps:
       - name: Checkout Repository
@@ -24,14 +24,14 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install Dependencies
-        run: npm install
+        run: npm i
 
       - name: Start index.js with pm2
         id: start-app
         run: |
           npm start index.js
-        continue-on-error: true
 
       - name: Check if the previous step failed
         if: steps.start-app.outcome != 'success'
-        run: echo "The previous step failed. You can add your retry logic here."
+        run: |
+          echo "The previous step failed. You can add your retry logic here or take specific actions."
