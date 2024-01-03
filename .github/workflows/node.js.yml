@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Run discord bot
 
 on:
   push:
@@ -26,12 +26,12 @@ jobs:
       - name: Install Dependencies
         run: npm i
 
-      - name: Start index.js with pm2
+      - name: Start index.js
         id: start-app
         run: |
           npm start index.js
 
-      - name: Check if the previous step failed
+      - name: Restart if error
         if: steps.start-app.outcome != 'success'
         run: |
           npm start index.js
