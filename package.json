@@ -1,7 +1,7 @@
 {
   "name": "test-bit",
   "version": "0.0.1",
-  "description": "",
+  "description": "A test repository for testing JavaScript applications.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -14,8 +14,8 @@
     "url": "git+https://github.com/farmhouse-gold6432/test-bit.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "defowler2005",
+  "license": "UNLICENSE",
   "bugs": {
     "url": "https://github.com/farmhouse-gold6432/test-bit/issues"
   },
