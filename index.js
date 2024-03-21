@@ -40,7 +40,7 @@ client.once('ready', async (data) => {
             ]
         });
         console.log(`Successfully reloaded ${data.length} (/) commands.`);
-    } catch (error) { console.error(`Error while registering ${data.length} (/) commands: ${error}`) };
+    } catch (error) { console.error(`Error while registering ${data.length} (/) commands: ${error}\n${error.stack}`) };
 });
 
 client.on(Events.InteractionCreate, (interaction) => {
